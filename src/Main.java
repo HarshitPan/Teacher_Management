@@ -10,7 +10,7 @@ class Teachers
     static Scanner sc=new Scanner(System.in);
     Teachers() throws Exception
     {
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/teachers","harshit","Harsh@9977");
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/teachers","root","root");
         stmt=con.createStatement();
     }
 }

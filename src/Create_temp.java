@@ -3,7 +3,7 @@ public class Create_temp {
     public static void main(String[] args){
         try{
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306","harshit","Harsh@9977");
+        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306","root","root");
         Statement stmt=con.createStatement();
         stmt.executeUpdate("create database teachers;");
         stmt.executeUpdate("use teachers;");
